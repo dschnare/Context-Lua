@@ -10,6 +10,16 @@
 Context Lua
 ====================
 
+Context Lua is an opt-in contextual Lua module loader. That is instead
+of overriding the global 'require' function, contextually requiring modules
+is an opt-in endeavour.
+
+This means that 'legacy' code can be used alongside contextually aware code.
+
+The real-world use cases for this module may be limited due to the nature of
+module loading in Lua, but when a module exports are mutable, Context Lua offers
+a clean mechanism for loading fresh versions of any module in contexts.
+
 
 Installation
 --------------------
