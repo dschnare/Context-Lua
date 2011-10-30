@@ -13,3 +13,17 @@ local imports = {
     -- already loaded it into this context.
     d = context.require('d')
 }
+
+--[[
+Output
+-- From loading module 'a' in 'example.lua'
+a.lua executed
+-- From loading module 'c' in 'a.lua'
+c.lua executed
+-- From loading module 'b' in 'example.lua'
+b.lua executed
+-- From loading module 'd' in 'b.lua'
+d.lua executed
+-- From loading module 'c' in 'example.lua'
+c.lua executed
+--]]
